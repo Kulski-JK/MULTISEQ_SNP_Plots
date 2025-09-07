@@ -1,6 +1,6 @@
 # ============================================================
-# MULTISEQ_SNPplot FINAL SCRIPT WITH CLICKABLE SUMMARY LINKS
-# AND OUTPUT FOLDER NAMED WITH _Rplots
+# MULTISEQ_SNPplot FINAL SCRIPT (GitHub-ready)
+# Output folder named based on input file + "_Rplots"
 # ============================================================
 
 library(ggplot2)
@@ -8,14 +8,14 @@ library(openxlsx)
 library(dplyr)
 
 # ==== USER SETUP ====
-setwd("/Users/jerzykulski/Desktop")
-input_file <- "39v47.59.72.89.92.snps.txt"
+# Example input file in 02_example_input/ folder
+input_file <- "02_example_input/1v21.23.45.48.68-SNPs.txt"
 bin_width <- 1000
 
-# ==== CREATE OUTPUT FOLDER BASED ON INPUT FILE + "_Rplots" ====
-input_name <- tools::file_path_sans_ext(basename(input_file))  # remove .txt
-output_dir <- file.path(getwd(), paste0(input_name, "_Rplots"))  # add "_Rplots"
-if (!dir.exists(output_dir)) dir.create(output_dir)
+# ==== CREATE OUTPUT FOLDER BASED ON INPUT FILE ====
+input_name <- tools::file_path_sans_ext(basename(input_file))
+output_dir <- file.path("03_example_outputs", paste0(input_name, "_Rplots"))
+if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
 cat("Outputs will be saved in folder:", output_dir, "\n\n")
 
 # ==== LOAD FILE ====
@@ -152,4 +152,3 @@ if (length(summary_list) > 0) {
 }
 
 cat("\nAll pairwise SNP density plots and tables completed.\n")
-
