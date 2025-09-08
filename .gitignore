@@ -21,8 +21,7 @@ Thumbs.db
 
 # === EXCEPTIONS: keep example input/output files ===
 !02_example_input/*.txt
-!03_example_outputs/snp_density_CZVA02000001v48.png
-!03_example_outputs/snp_bins_CZVA02000001v45.xlsx
-!03_example_outputs/snp_bins_CZVA02000001v45.txt
-!03_example_outputs/pairwise_snp_density_summary.xlsx
-
+!03_example_outputs/1v21.23.45.48.68-SNPs_Rplots/snp_density_CZVA02000001v48.png
+!03_example_outputs/1v21.23.45.48.68-SNPs_Rplots/snp_bins_CZVA02000001v45.xlsx
+!03_example_outputs/1v21.23.45.48.68-SNPs_Rplots/snp_bins_CZVA02000001v45.txt
+!03_example_outputs/1v21.23.45.48.68-SNPs_Rplots/pairwise_snp_density_summary.xlsx
