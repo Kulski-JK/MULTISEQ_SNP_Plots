@@ -21,9 +21,8 @@ Thumbs.db
 
 # === EXCEPTIONS: keep example input/output files ===
 !02_example_input/*.txt
-!03_example_outputs/*.txt
-!03_example_outputs/*.xlsx
-!03_example_outputs/*.png
-
-
+!03_example_outputs/snp_density_CZVA02000001v48.png
+!03_example_outputs/snp_bins_CZVA02000001v45.xlsx
+!03_example_outputs/snp_bins_CZVA02000001v45.txt
+!03_example_outputs/pairwise_snp_density_summary.xlsx
 
