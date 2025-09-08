@@ -18,3 +18,12 @@ Thumbs.db
 *.bak
 *.tmp
 *.swp
+
+# === EXCEPTIONS: keep example input/output files ===
+!02_example_input/*.txt
+!03_example_outputs/*.txt
+!03_example_outputs/*.xlsx
+!03_example_outputs/*.png
+
+
+
